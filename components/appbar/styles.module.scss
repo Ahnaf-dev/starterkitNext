@@ -1,0 +1,34 @@
+$darkTheme: #222222;
+$darkCopy: #ffffff;
+$lightTheme: tomato;
+$lightCopy: #ffffff;
+
+%appbar {
+    padding: 0.5rem 1rem;
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+   
+}
+
+.dark {
+    @extend %appbar;
+    background-color: $darkTheme;
+    color: $darkCopy;
+
+    li:hover {
+        color: tomato;
+    }
+}
+
+.light {
+    @extend %appbar;
+    background-color: $lightTheme;
+    color: $lightCopy;
+
+    li:hover {
+        color: black;
+    }
+}
